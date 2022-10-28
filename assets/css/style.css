@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-colour:#56E39F;
+    --secondary-colour: #465775;
+    --third-colour: #59C9A5;
+    --fourth-colour: #EF6F6C;
+
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: #EF6F6C solid 2px;
+}
+
+.hero-banner{
+  border: var(--primary-colour) solid 2px;
+}
+
+.page-wrapper{
+  border: #EF6F6C solid 2px;
+  flex: 1;
+}
+
+.page-section {
+  border: var(--primary-colour) solid 2px;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+#work-content {
+  display: grid;
+  grid-template-areas: 
+  "main-gr main-gr"
+  "second-gr third-gr"
+  ;
+}
+
+#main-work {
+  grid-area: main-gr;
+  background-color: #EF6F6C;
+}
+
+#second-work {
+  grid-area: second-gr;
+  background-color: #13ad34;
+}
+
+#third-work {
+  grid-area: third-gr;
+  background-color: #dace27;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+footer{
+  text-align: center;
+}
