@@ -95,7 +95,18 @@ header {
 #contact {
   display: grid;
   grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "label-gr tel-gr" 
+  "label-gr email-gr";
   align-items: center;
+}
+
+#contact-tel {
+  grid-area: tel-gr;
+}
+
+#contact-email {
+  grid-area: email-gr;
 }
 
 footer{
