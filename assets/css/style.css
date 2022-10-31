@@ -35,7 +35,7 @@ h6 {
 }
 
 p {
-  margin: 0;
+  margin: 5px;
 }
 
 /* Header and links styling */
@@ -87,10 +87,6 @@ header nav a:hover {
   padding-right: 30px;
   border-right: 5px solid var(--secondary-colour);  
   color: var(--secondary-colour);
-}
-
-.content_font{
-  color: var(--fourth-colour);
 }
 
 /* About section styling */
@@ -191,4 +187,29 @@ footer{
   background-color: var(--secondary-colour);
   color: var(--primary-colour);  
   text-align: center;
+}
+
+@media (max-width: 768px){
+  .hero-banner h2 {
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+
+  #about img {
+    width: 100px;
+  }
+  .page-section p {
+    font-size: medium;
+  }
+
+  .label {
+    text-align: right;
+    font-size: 25px;
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    border-right: 5px solid var(--secondary-colour);  
+    color: var(--secondary-colour);
+  }
 }
