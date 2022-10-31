@@ -12,7 +12,7 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Kamen</h1>
+    <h1>Kamen Ivanov - Portfolio</h1>
     <nav>
       <a href="#about">About me</a>
       <a href="#work">Work</a>
@@ -30,25 +30,41 @@
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2 class="label">About Me</h2>
-      <p>I'm a project manager who was once a developer and is keen to go back to being a developer</p>
+        <h2 class="label">About Me</h2>
+        <img src="assets/images/avatar.png" width="150px" alt="Kamen avatar">
+        <p>I'm a project manager who was once a developer and is keen to go back to being a developer</p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2 class="label">Work</h2>
       <section class="work-content" id="work-content">
-        <div id="main-work">Main work</div>
-        <div id="second-work">Second work</div>
-        <div id="third-work">Third work</div>
+        <div id="main-work">
+          <a href="https://ikamen.github.io/best_youtube_channels/" target="_blank">
+            <img src="assets/images/youtubeproject.png" alt="YouTube project image" width="400px">
+          </a>
+          <p>My latest project featuring the best YouTube channels</p>
+        </div>
+        <div id="second-work">
+          <a href="https://ikamen.github.io/week1_challenge/" target="_blank">
+            <img src="assets/images/cssrefactoring.png" alt="CSS refactoring project" width="200px"  height="200px" >
+          </a>
+          <p>My project on refactoring CSS</p>
+        </div>
+        <div id="third-work">
+          <a href="https://ikamen.github.io/dev_course_prework_test/" target="_blank">
+            <img src="assets/images/prep.png" alt="Prep work" width="200px" height="200px">
+          </a>
+          <p>My project on preparing for the dev course</p>
+        </div>
       </section>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2 class="label">Contact Me</h2>
-      <p id="contact-tel">tel: +44 UK mobile number</p>
-      <p id="contact-email">kamen.web.dev@gmail.com</p>
+    <section class="page-section-contact" id="contact">
+      <h2 class="label" id="contact-label">Contact Me</h2>
+        <a href="tel:+44 UK mobile number" id="contact-tel">+44 UK mobile number</a>
+        <a href="mailto:kamen.web.dev@gmail.com" id="contact-email">kamen.web.dev@gmail.com</a>
     </section>
   </main>
   <footer>

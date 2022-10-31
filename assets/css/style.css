@@ -3,11 +3,12 @@
 }
 
 :root {
-    --primary-colour:#56E39F;
+    --primary-colour:	#56e39f;
     --secondary-colour: #465775;
     --third-colour: #59C9A5;
     --fourth-colour: #EF6F6C;
-
+    --primary-colour-opacity: rgba(86, 227, 159, 0.5);
+    --third-colour-opacity: rgba(89, 201, 165, 0.5);
 }
 
 html, body {
@@ -37,72 +38,148 @@ p {
   margin: 0;
 }
 
+/* Header and links styling */
 header {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  border: #EF6F6C solid 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--secondary-colour);
+  color: var(--primary-colour);  
 }
 
+header nav a {
+  margin-right: 30px;
+  color: var(--primary-colour);
+  font-size: 20px;
+}
+
+header nav a:hover {
+  text-decoration:underline;
+  }
+
 .hero-banner{
-  border: var(--primary-colour) solid 2px;
+  background-image: url("../images/pexels-scott-webb-1029624.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  color: var(--secondary-colour);
+}
+
+.hero-banner h2 {
+  margin-top: 100px;
+  margin-right: 200px;
 }
 
 .page-wrapper{
-  border: #EF6F6C solid 2px;
   flex: 1;
 }
 
-.page-section {
-  border: var(--primary-colour) solid 2px;
+/* Styling of the section names on the left */
+.label {
+  text-align: right;
+  font-size: 40px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  border-right: 5px solid var(--secondary-colour);  
+  color: var(--secondary-colour);
 }
 
+.content_font{
+  color: var(--fourth-colour);
+}
+
+/* About section styling */
 #about {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 15% 65%;
   align-items: center;
+  margin: 20px;
 }
 
+.page-section p {
+  color: var(--fourth-colour);
+  font-size: large;
+}
+
+
+/* Work section styling */
 #work {
   display: grid;
   grid-template-columns: 20% 80%;
   align-items: center;
+  margin: 20px;
 }
 
 #work-content {
   display: grid;
   grid-template-areas: 
   "main-gr main-gr"
-  "second-gr third-gr"
-  ;
+  "second-gr third-gr";
 }
 
 #main-work {
   grid-area: main-gr;
-  background-color: #EF6F6C;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-colour-opacity);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: var(--secondary-colour) solid 5px;
+}
+
+#main-work:hover, #second-work:hover, #third-work:hover {
+  background-color: var(--third-colour-opacity);
 }
 
 #second-work {
   grid-area: second-gr;
-  background-color: #13ad34;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-colour-opacity);
+  padding: 10px;
+  margin-right: 20px;
+  border: var(--secondary-colour) solid 5px;
 }
 
 #third-work {
   grid-area: third-gr;
-  background-color: #dace27;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-colour-opacity);
+  padding: 10px;
+  border: var(--secondary-colour) solid 5px;
 }
 
-#contact {
+/* Contact section styling */
+.page-section-contact {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 
   "label-gr tel-gr" 
   "label-gr email-gr";
   align-items: center;
+  margin: 20px;
+}
+
+.page-section-contact a {
+  color: var(--fourth-colour);
+  font-size: large;
+}
+
+#contact-label {
+  grid-area: label-gr;
 }
 
 #contact-tel {
-  grid-area: tel-gr;
+  grid-area: tel-gr
 }
 
 #contact-email {
@@ -110,5 +187,8 @@ header {
 }
 
 footer{
+  padding: 10px;
+  background-color: var(--secondary-colour);
+  color: var(--primary-colour);  
   text-align: center;
 }
